@@ -6,12 +6,7 @@ package main;
 
 public class Internacional extends Vuelos {
 
-    public Internacional(String origen, String destino, Integer precioBase, String codigoVuelo) {
+    public Internacional(String origen, String destino, int precioBase, String codigoVuelo) {
         super(origen, destino, precioBase, codigoVuelo);
     }
-    
-    
-   
-
-    
 }

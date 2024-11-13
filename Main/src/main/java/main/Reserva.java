@@ -1,50 +1,37 @@
 
 package main;
 
-
 public abstract class Reserva {
-     protected int costoAgregado;
-     protected String Nombre;
-     protected  String codigo;
+    protected String nombre;
+    protected String codigoVuelo;
+    protected int costoTotal;
 
-    public Reserva(int costoAgregado, String Nombre, String codigo) {
-        this.costoAgregado = costoAgregado;
-        this.Nombre = Nombre;
-        this.codigo = codigo;
+    public Reserva(String nombre, String codigoVuelo, int costoTotal) {
+        this.nombre = nombre;
+        this.codigoVuelo = codigoVuelo;
+        this.costoTotal = costoTotal;
     }
 
-    public int getCostoAgregado() {
-        return costoAgregado;
+    public void cancelarReserva() {
+        System.out.println("Reserva cancelada para " + nombre + " en el vuelo " + codigoVuelo);
     }
 
-    public void setCostoAgregado(int costoAgregado) {
-        this.costoAgregado = costoAgregado;
+    public int getCostoTotal() {
+        return costoTotal;
     }
 
-    public String getNombre() {
-        return Nombre;
+    @Override
+    public String toString() {
+        return "Reserva a nombre de " + nombre + " - Vuelo: " + codigoVuelo + " - Costo Total: " + costoTotal;
     }
-
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
-    }
-
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
-     
-     
-     
-     
-     
-    
-    
-    
-    
-    
-    
 }
+
+     
+     
+    
+    
+    
+    
+    
+    
+

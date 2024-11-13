@@ -1,18 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package main;
 
-/**
- *
- * @author camper
- */
-public class Ejecutivo extends Reserva{
-    
-    public Ejecutivo(int costoAgregado, String Nombre, String codigo) {
-        super(costoAgregado, Nombre, codigo);
+public class Ejecutivo extends Reserva {
+
+    public Ejecutivo(String nombre, String codigoVuelo, int precioBase) {
+        super(nombre, codigoVuelo, precioBase + 50); 
     }
-    
-    
 }
